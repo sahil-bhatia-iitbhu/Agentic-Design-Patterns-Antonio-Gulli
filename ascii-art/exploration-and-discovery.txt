@@ -1,0 +1,40 @@
+╔══════════════════════════════════════════════════╗
+║        EXPLORATION & DISCOVERY                    ║
+╚══════════════════════════════════════════════════╝
+
+      [RESEARCH GOAL]
+            ↓
+    ┌──────────────┐
+    │ SCOUT BROAD  │
+    └──────────────┘
+      ↙   ↓   ↓   ↘
+   Papers Data Web Experts
+      ↓    ↓   ↓    ↓
+    ┌──────────────┐
+    │ MAP SPACE    │
+    └──────────────┘
+           ↓
+    ┌──────────────┐
+    │   CLUSTER    │
+    │   THEMES     │
+    └──────────────┘
+        ↙  ↓  ↘
+      T1  T2  T3
+        ↓  ↓  ↓
+    ┌──────────────┐
+    │ DEEP DIVE    │← Novel/Impact
+    └──────────────┘
+           ↓
+    Extract Insights
+           ↓
+    ? Hypotheses ?
+           ↓
+    Test & Iterate
+           ↓
+    [DISCOVERIES]
+
+KEY CONCEPTS:
+• Broad exploration
+• Pattern clustering
+• Targeted deep-dives
+• Hypothesis generation

@@ -1,0 +1,40 @@
+╔══════════════════════════════════════════════════╗
+║       KNOWLEDGE RETRIEVAL (RAG)                   ║
+╚══════════════════════════════════════════════════╝
+
+     [DOCUMENTS]
+          ↓
+    ┌──────────┐
+    │  PARSE   │
+    │  & CHUNK │
+    └──────────┘
+          ↓
+    ┌──────────┐
+    │  EMBED   │→ Vector DB
+    └──────────┘
+          ↓
+    ═══════════════
+          ↓
+     [USER QUERY]
+          ↓
+    ┌──────────┐
+    │ REWRITE  │
+    │  EXPAND  │
+    └──────────┘
+          ↓
+    🔍 SEARCH
+          ↓
+    ┌──────────┐
+    │  TOP-K   │
+    │  RERANK  │
+    └──────────┘
+          ↓
+    [CONTEXT + LLM]
+          ↓
+    Answer + Citations
+
+KEY CONCEPTS:
+• Semantic chunking
+• Vector search
+• Query enhancement
+• Source grounding

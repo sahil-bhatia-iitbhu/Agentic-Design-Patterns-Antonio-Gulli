@@ -1,0 +1,37 @@
+╔══════════════════════════════════════════════════╗
+║        MODEL CONTEXT PROTOCOL (MCP)               ║
+╚══════════════════════════════════════════════════╝
+
+    ┌─────────────────┐
+    │  MCP REGISTRY   │
+    └─────────────────┘
+           ↓
+    ╔═══════════════╗
+    ║   MANIFESTS   ║
+    ╠═══════════════╣
+    ║ • Tools       ║
+    ║ • Data        ║
+    ║ • Services    ║
+    ╚═══════════════╝
+           ↓
+    [DISCOVERY API]
+           ↓
+       LLM AGENT
+           ↓
+    ┌─────────────┐
+    │ Permission  │
+    │   Check     │
+    └─────────────┘
+         ✓ ↓ ✗
+    ┌─────────────┐
+    │   CALL      │
+    │  RESOURCE   │
+    └─────────────┘
+           ↓
+    [AUDIT + TRACE]
+
+KEY CONCEPTS:
+• Standardized interface
+• Resource discovery
+• Permission scoping
+• Version management

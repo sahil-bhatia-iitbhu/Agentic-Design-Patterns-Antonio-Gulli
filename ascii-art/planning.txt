@@ -1,0 +1,35 @@
+╔══════════════════════════════════════════════════╗
+║             PLANNING PATTERN                      ║
+╚══════════════════════════════════════════════════╝
+
+         [GOAL]
+           ↓
+    ┌──────────────┐
+    │  Decompose   │
+    │  Milestones  │
+    └──────────────┘
+           ↓
+    ┌──────────────┐
+    │ Dependency   │
+    │    Graph     │
+    └──────────────┘
+         A → B
+         ↓   ↓
+         C → D → E
+           ↓
+    ┌──────────────┐
+    │  Allocate    │←── Constraints
+    │  Resources   │    (time/budget)
+    └──────────────┘
+           ↓
+    [Execute Steps]
+         ↓ ↑
+    ◆ Checkpoint ◆ ← Monitor & Replan
+         ↓
+    [GOAL MET]
+
+KEY CONCEPTS:
+• Milestone mapping
+• Dependency tracking
+• Resource allocation
+• Adaptive replanning

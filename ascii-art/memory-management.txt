@@ -1,0 +1,37 @@
+╔══════════════════════════════════════════════════╗
+║          MEMORY MANAGEMENT PATTERN                ║
+╚══════════════════════════════════════════════════╝
+
+         [INPUT]
+           ↓
+    ┌──────────────┐
+    │   CLASSIFY   │
+    └──────────────┘
+      ↙    ↓    ↘
+   Short  Episodic Long
+   Term   Memory   Term
+    ↓       ↓       ↓
+  Buffer  Events  Knowledge
+    ↓       ↓       ↓
+  ┌──────────────────┐
+  │  INDEX + META    │
+  │ • Recency        │
+  │ • Frequency      │
+  │ • Topic Tags     │
+  └──────────────────┘
+           ↓
+    ┌──────────────┐
+    │   RETRIEVE   │←── Current Context
+    └──────────────┘
+           ↓
+       TTL Check
+      ↙        ↘
+   Forget    Load
+             ↓
+        [USE IN CONTEXT]
+
+KEY CONCEPTS:
+• Memory types
+• Context compression
+• Selective retrieval
+• Privacy & TTL

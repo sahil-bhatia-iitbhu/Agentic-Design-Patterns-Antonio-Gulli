@@ -1,0 +1,38 @@
+╔══════════════════════════════════════════════════╗
+║            PRIORITIZATION PATTERN                 ║
+╚══════════════════════════════════════════════════╝
+
+      [TASK QUEUE]
+           ↓
+    ┌──────────────┐
+    │  DEPENDENCY  │
+    │    GRAPH     │
+    └──────────────┘
+           ↓
+    ┌──────────────┐
+    │    SCORE     │
+    │  Value/Risk  │
+    │  Effort/Time │
+    └──────────────┘
+           ↓
+    Priority = V/E × U
+           ↓
+    ╔═══════════╗
+    ║  RANKED   ║
+    ║   QUEUE   ║
+    ╚═══════════╝
+      1. Task A ⭐⭐⭐⭐⭐
+      2. Task B ⭐⭐⭐⭐
+      3. Task C ⭐⭐⭐
+           ↓
+    [EXECUTE TOP]
+         ↓  ↑
+    New Priority?
+         ↓
+    Preempt & Reorder
+
+KEY CONCEPTS:
+• Dependency mapping
+• Value scoring
+• Dynamic reordering
+• Starvation prevention

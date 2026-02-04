@@ -1,0 +1,33 @@
+╔══════════════════════════════════════════════════╗
+║          REASONING TECHNIQUES                     ║
+╚══════════════════════════════════════════════════╝
+
+       [PROBLEM]
+          ↓
+    ┌──────────┐
+    │  SELECT  │
+    │  METHOD  │
+    └──────────┘
+    ↙   ↓   ↓   ↘
+  CoT  ToT  SC  ReAct
+   ↓    ↓   ↓    ↓
+Step  Tree Multi Think
+by    of   Path  +Act
+Step  Ideas Check Loop
+   ↓    ↓    ↓    ↓
+   └────┴────┴────┘
+          ↓
+    ┌──────────┐
+    │  SCORE   │← Rubrics
+    │ SOLUTIONS│
+    └──────────┘
+          ↓
+    Best or Merge
+          ↓
+    [SOLUTION]
+
+METHODS:
+• CoT: Chain of Thought
+• ToT: Tree of Thoughts  
+• SC: Self-Consistency
+• ReAct: Reason + Act

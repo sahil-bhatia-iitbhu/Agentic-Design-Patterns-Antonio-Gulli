@@ -1,0 +1,31 @@
+╔══════════════════════════════════════════════════╗
+║           PARALLELIZATION PATTERN                 ║
+╚══════════════════════════════════════════════════╝
+
+         [LARGE TASK]
+              ↓
+         ┌─────────┐
+         │  SHARD  │
+         └─────────┘
+         ↙  ↙  ↘  ↘
+       W1  W2  W3  W4   ← Rate Limited (max 10)
+       ║   ║   ║   ║
+       ▼   ▼   ▼   ▼    (Concurrent)
+      ┌─┐ ┌─┐ ┌─┐ ┌─┐
+      │A│ │B│ │C│ │D│   With retry
+      └─┘ └─┘ └─┘ └─┘   & backoff
+       ↓   ↓   ↓   ↓
+       └───┴───┴───┘
+             ↓
+       ┌──────────┐
+       │  MERGE   │
+       │ RESULTS  │
+       └──────────┘
+             ↓
+         [OUTPUT]
+
+KEY CONCEPTS:
+• Independent units
+• Concurrent execution
+• Rate limiting
+• Result aggregation

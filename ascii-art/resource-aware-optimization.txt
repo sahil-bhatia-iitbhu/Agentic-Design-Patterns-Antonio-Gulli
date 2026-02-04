@@ -1,0 +1,41 @@
+╔══════════════════════════════════════════════════╗
+║       RESOURCE-AWARE OPTIMIZATION                 ║
+╚══════════════════════════════════════════════════╝
+
+        [TASK]
+          ↓
+    ┌──────────┐
+    │ CLASSIFY │
+    │COMPLEXITY│
+    └──────────┘
+      ↙   ↓   ↘
+   Simple Med Complex
+     $    $$   $$$
+     ↓    ↓     ↓
+   Mini  Base  Large
+   Model Model Model
+     ↓    ↓     ↓
+    ┌──────────┐
+    │ MONITOR  │
+    │ RESOURCES│
+    └──────────┘
+         ↓
+    ┌──────────┐
+    │ Tokens   │ ← Limits
+    │ Time     │
+    │ Cost     │
+    └──────────┘
+       ↓   ↓
+     OK? Exceed?
+      ↓    ↓
+   Continue ↓
+      ↓  Optimize
+      ↓  (cache/prune)
+      ↓    ↓
+    [COMPLETE]
+
+KEY CONCEPTS:
+• Complexity routing
+• Model selection
+• Budget tracking
+• Dynamic optimization

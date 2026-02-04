@@ -1,0 +1,20 @@
+# Exclude specific directories
+mermaid-tldr/
+n8n-prompts/
+sticky-notes-tldr/
+
+# Exclude specific files
+agentic_design_patterns_structural_playbook.md
+index.md
+youtube-hooks.txt
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~

@@ -1,0 +1,36 @@
+╔══════════════════════════════════════════════════╗
+║      EXCEPTION HANDLING & RECOVERY                ║
+╚══════════════════════════════════════════════════╝
+
+        [TRY BLOCK]
+            ↓
+        External Call
+            ↓
+         ERROR!
+            ↓
+    ┌──────────────┐
+    │   CLASSIFY   │
+    │    ERROR     │
+    └──────────────┘
+      ↙    ↓     ↘
+  Transient Permanent Critical
+      ↓      ↓        ↓
+   RETRY  FALLBACK  ESCALATE
+      ↓      ↓        ↓
+   Backoff  Cache   Human
+   +Jitter  Model   Alert
+      ↓      ↓        ↓
+   ┌──────────────────┐
+   │   CHECKPOINT     │
+   │   Save State     │
+   └──────────────────┘
+           ↓
+    [RECOVER/RESUME]
+           ↓
+       Log & Learn
+
+KEY CONCEPTS:
+• Error classification
+• Retry strategies
+• Fallback options
+• State preservation

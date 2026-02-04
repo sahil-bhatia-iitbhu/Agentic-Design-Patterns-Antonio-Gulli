@@ -1,0 +1,33 @@
+╔══════════════════════════════════════════════════╗
+║            REFLECTION PATTERN                     ║
+╚══════════════════════════════════════════════════╝
+
+       [GENERATE v1]
+            ↓
+       ┌─────────┐
+       │ CRITIC  │←── Rubrics
+       │  AGENT  │    Tests
+       └─────────┘    Checks
+            ↓
+        PASS? NO
+            ↓
+       ┌─────────┐
+       │FEEDBACK │
+       └─────────┘
+            ↓
+       ┌─────────┐
+       │ REVISE  │→ [GENERATE v2]
+       └─────────┘        ↓
+            ↑         PASS? NO
+            └─────────────┘
+         (Max 3 iterations)
+                ↓
+           PASS? YES
+                ↓
+          [FINAL OUTPUT]
+
+KEY CONCEPTS:
+• Self-critique
+• Iterative improvement
+• Quality rubrics
+• Convergence limits

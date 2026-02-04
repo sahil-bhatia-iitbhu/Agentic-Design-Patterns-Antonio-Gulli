@@ -1,0 +1,29 @@
+╔══════════════════════════════════════════════════╗
+║       MULTI-AGENT COLLABORATION                   ║
+╚══════════════════════════════════════════════════╝
+
+      ┌─────────────┐
+      │ COORDINATOR │
+      └─────────────┘
+            ↓
+    ┌───────────────────┐
+    │  SHARED MEMORY    │
+    │  & ARTIFACTS      │
+    └───────────────────┘
+      ↙    ↓    ↓    ↘
+   [A1]  [A2]  [A3]  [A4]
+Research Analysis Writer Review
+    ↓      ↓     ↓     ↓
+   Data → Process → Content → QA
+    ↓      ↓     ↓     ↓
+    └──────┴─────┴─────┘
+            ↓
+     Handoff Contracts
+            ↓
+      [FINAL OUTPUT]
+
+KEY CONCEPTS:
+• Specialist roles
+• Shared context
+• Handoff protocols
+• Orchestration patterns

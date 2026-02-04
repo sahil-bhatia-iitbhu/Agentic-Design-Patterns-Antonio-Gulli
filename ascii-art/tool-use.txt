@@ -1,0 +1,34 @@
+╔══════════════════════════════════════════════════╗
+║            TOOL USE PATTERN                       ║
+╚══════════════════════════════════════════════════╝
+
+        [LLM AGENT]
+            ↓
+     "Need external data"
+            ↓
+      ╔═══════════╗
+      ║   TOOL    ║
+      ║ REGISTRY  ║
+      ╚═══════════╝
+      ↙     ↓     ↘
+   🔍Web  📊Data  🔧API
+     ↓      ↓      ↓
+   ┌────────────────┐
+   │ Select & Call  │
+   │ with params    │
+   └────────────────┘
+           ↓
+      {JSON Response}
+           ↓
+      ┌─────────┐
+      │ Parse & │
+      │Normalize│
+      └─────────┘
+           ↓
+      [CONTINUE]
+
+KEY CONCEPTS:
+• Function calling
+• Tool discovery
+• Error handling
+• Result integration

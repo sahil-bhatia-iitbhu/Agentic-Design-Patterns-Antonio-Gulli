@@ -1,0 +1,37 @@
+╔══════════════════════════════════════════════════╗
+║        LEARNING & ADAPTATION PATTERN              ║
+╚══════════════════════════════════════════════════╝
+
+    [FEEDBACK SIGNALS]
+      ↙    ↓    ↘
+   Edits Ratings Outcomes
+      ↓    ↓     ↓
+   ┌──────────────┐
+   │  AGGREGATE   │
+   │   & CLEAN    │
+   └──────────────┘
+          ↓
+     Filter Noise
+          ↓
+   ┌──────────────┐
+   │   LEARNING   │
+   │   METHODS    │
+   └──────────────┘
+     ↙    ↓    ↘
+  Prompts Policy Examples
+     ↓     ↓      ↓
+   ┌──────────────┐
+   │   A/B TEST   │
+   └──────────────┘
+        ↙   ↘
+    Better? Worse?
+      ↓      ↓
+   Deploy  Rollback
+      ↓
+  [IMPROVED SYSTEM]
+
+KEY CONCEPTS:
+• Feedback collection
+• Signal validation
+• Multiple learning paths
+• Performance monitoring

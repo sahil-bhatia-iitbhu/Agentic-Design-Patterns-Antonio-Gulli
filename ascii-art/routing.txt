@@ -1,0 +1,26 @@
+╔══════════════════════════════════════════════════╗
+║              ROUTING PATTERN                      ║
+╚══════════════════════════════════════════════════╝
+
+            [REQUEST]
+                ↓
+         ╔═══════════╗
+         ║  ROUTER   ║
+         ║  AGENT    ║
+         ╚═══════════╝
+         ↙   ↓   ↓   ↘
+      70%   85%  60%  40%
+       ↓     ↓    ↓    ↓
+    [Tech] [Sales] [Support] [?]
+       ↓     ↓       ↓       ↓
+    Tools  CRM    Tickets  Clarify
+       ↓     ↓       ↓       ↓
+       └─────┴───────┴───────┘
+                 ↓
+           [RESPONSE]
+
+KEY CONCEPTS:
+• Intent classification
+• Confidence thresholds  
+• Specialized agents
+• Fallback handling

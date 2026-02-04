@@ -1,0 +1,37 @@
+╔══════════════════════════════════════════════════╗
+║         HUMAN-IN-THE-LOOP (HITL)                  ║
+╚══════════════════════════════════════════════════╝
+
+       [AI PROCESS]
+           ↓
+    ┌──────────────┐
+    │  DECISION    │
+    │   GATES      │
+    └──────────────┘
+      ↙    ↓    ↘
+   High   Edge  Complex
+   Risk   Case   Task
+     ↓     ↓      ↓
+    ┌──────────────┐
+    │ REVIEW QUEUE │← Priority/SLA
+    └──────────────┘
+           ↓
+    ╔═══════════╗
+    ║   HUMAN   ║
+    ║   REVIEW  ║
+    ╚═══════════╝
+      ↙   ↓   ↘
+  Approve Edit Reject
+     ↓    ↓    ↓
+    ┌──────────────┐
+    │   CAPTURE    │
+    │   FEEDBACK   │
+    └──────────────┘
+           ↓
+    [LEARN & IMPROVE]
+
+KEY CONCEPTS:
+• Decision gates
+• Review queues
+• Human feedback
+• Continuous learning

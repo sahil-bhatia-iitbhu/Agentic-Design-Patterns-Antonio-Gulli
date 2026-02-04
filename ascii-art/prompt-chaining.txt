@@ -1,0 +1,30 @@
+╔══════════════════════════════════════════════════╗
+║           PROMPT CHAINING PATTERN                 ║
+╚══════════════════════════════════════════════════╝
+
+    [INPUT] 
+       ↓
+    ┌──────────┐
+    │  TASK 1  │ → JSON Schema
+    └──────────┘
+       ↓ validate
+    ┌──────────┐
+    │  TASK 2  │ → JSON Schema
+    └──────────┘
+       ↓ validate
+    ┌──────────┐
+    │  TASK 3  │ → JSON Schema
+    └──────────┘
+       ↓ validate
+    ┌──────────┐
+    │  MERGE   │
+    │ RESULTS  │
+    └──────────┘
+       ↓
+    [OUTPUT]
+
+KEY CONCEPTS:
+• Sequential execution
+• Validated handoffs
+• Modular sub-tasks
+• Structured data contracts

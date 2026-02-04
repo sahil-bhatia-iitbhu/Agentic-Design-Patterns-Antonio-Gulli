@@ -1,0 +1,40 @@
+╔══════════════════════════════════════════════════╗
+║        GUARDRAILS/SAFETY PATTERNS                 ║
+╚══════════════════════════════════════════════════╝
+
+        [INPUT]
+          ↓
+    ┌──────────┐
+    │ SANITIZE │
+    └──────────┘
+      ↙   ↓   ↘
+    PII  Inject Harmful
+     ↓     ↓      ↓
+   Mask  Block  Filter
+     ↓     ↓      ↓
+    ┌──────────┐
+    │   RISK   │
+    │  SCORE   │
+    └──────────┘
+         ↓
+    🟢 🟡 🟠 🔴
+    Low Med High Critical
+     ↓   ↓   ↓     ↓
+    Go Limit Review Block
+     ↓   ↓    ↓     ↓
+    [PROCESS]
+         ↓
+    ┌──────────┐
+    │  OUTPUT  │
+    │ MODERATE │
+    └──────────┘
+         ↓
+    Policy Check
+         ↓
+    [SAFE OUTPUT]
+
+KEY CONCEPTS:
+• Input sanitization
+• Risk classification
+• Output moderation
+• Policy enforcement
